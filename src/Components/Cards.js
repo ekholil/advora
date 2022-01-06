@@ -75,7 +75,7 @@ const Cards = () => {
   // handle state change
   const handleStateChange = (selected) => {
     setSelectedOption(selected);
-    const selectedProduct = displayProducts.filter(
+    const selectedProduct = products.filter(
       (product) => product?.address.state === selected
     );
     setDisplayProducts(selectedProduct);
@@ -83,7 +83,7 @@ const Cards = () => {
   // handle City change
   const handleCityChange = (selected) => {
     setSelectedOption(selected);
-    const selectedProduct = displayProducts.filter(
+    const selectedProduct = products.filter(
       (product) => product?.address.city === selected
     );
     setDisplayProducts(selectedProduct);
