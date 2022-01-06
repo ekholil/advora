@@ -138,7 +138,7 @@ const Cards = () => {
           <div className="row">
             <h2 className="text-white">Edvora</h2>
             <h3 className="text-secondary">Products</h3>
-            <h4 className="text-white">Product Name</h4>
+            <h4 className="text-white">Product Name Here</h4>
             <hr />
             <div
               style={{ backgroundColor: "#131313" }}
