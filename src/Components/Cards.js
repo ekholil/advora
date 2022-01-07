@@ -13,7 +13,7 @@ const Cards = () => {
     swipeToSlide: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1200,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
@@ -22,15 +22,22 @@ const Cards = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -90,8 +97,8 @@ const Cards = () => {
   };
   return (
     <div className="container-fluid pt-5">
-      <div className="row">
-        <div className="col-md-2">
+      <div className="row g-5">
+        <div className="col-md-3">
           <div
             style={{ backgroundColor: "#131313" }}
             className="box py-4 px-1 rounded"
@@ -108,7 +115,7 @@ const Cards = () => {
               {uniqueProducts.map((item) => (
                 <option value={item}> {item}</option>
               ))}
-            </select> <br />
+            </select> 
 
             {/* select State */}
             <select
@@ -120,7 +127,7 @@ const Cards = () => {
               {uniqueStates.map((item) => (
                 <option value={item}> {item}</option>
               ))}
-            </select> <br />
+            </select> 
             {/* select City */}
             <select
               onChange={(e) => handleCityChange(e.target.value)}
@@ -134,7 +141,7 @@ const Cards = () => {
             </select>
           </div>
         </div>
-        <div className="col-md-10">
+        <div className="col-md-9">
           <div className="row">
             <h2 className="text-white">Edvora</h2>
             <h3 className="text-secondary">Products</h3>
