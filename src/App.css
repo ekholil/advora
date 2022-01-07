@@ -15,9 +15,10 @@ body{
 }
 select{
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   background-color: #292929;
   border: none;
   color: #fff;
   border-radius: 5px;
+  padding: 10px;
 }

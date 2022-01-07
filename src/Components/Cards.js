@@ -101,7 +101,7 @@ const Cards = () => {
         <div className="col-md-3">
           <div
             style={{ backgroundColor: "#131313" }}
-            className="box py-4 px-1 rounded"
+            className="box py-4 px-3 rounded"
           >
             <h4 className="text-white">Filters</h4>
             <hr className="text-white" />
@@ -143,13 +143,13 @@ const Cards = () => {
         </div>
         <div className="col-md-9">
           <div className="row">
-            <h2 className="text-white">Edvora</h2>
+            <h1 className="text-white">Edvora</h1>
             <h3 className="text-secondary">Products</h3>
-            <h4 className="text-white">Product Name Here</h4>
+            <h2 className="text-white">Product Name Here</h2>
             <hr />
             <div
               style={{ backgroundColor: "#131313" }}
-              className="py-2 ps-0 pe-2 row rounded d-flex justify-content-center"
+              className="py-2 mt-5 ps-0 pe-2 row rounded d-flex justify-content-center"
             >
               <Slider {...settings}>
                 {displayProducts.map((product) => (
